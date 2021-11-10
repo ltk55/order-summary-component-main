@@ -1,0 +1,11 @@
+@import "variables";
+
+body {
+  background: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: $color-neutral-50;
+}
+
+.container {
+  font-family: "Red Hat Display";
+}
