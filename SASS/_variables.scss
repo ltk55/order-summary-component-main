@@ -1,0 +1,27 @@
+// ## Colors
+
+// ### Primary
+
+$color-primary-50: hsl(225, 100%, 94%);
+$color-primary-500: hsl(245, 75%, 52%);
+
+// ### Neutral
+
+$color-neutral-50: hsl(225, 100%, 98%);
+$color-neutral-500: hsl(224, 23%, 55%);
+$color-neutral-800: hsl(223, 47%, 23%);
+
+// ## Typography
+
+// ### Body Copy
+
+$Font-size-p: 1rem;
+
+// ### Font
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+
+$font-weight-medium: 500;
+
+$font-weight-bold: 700;
+$font-weight-black: 900;
