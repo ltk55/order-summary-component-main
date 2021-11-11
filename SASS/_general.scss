@@ -6,6 +6,11 @@ body {
   background-color: $color-primary-50;
   font-size: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 p {
@@ -30,6 +35,7 @@ p {
   margin: 20px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px hsl(228, 45%, 44%);
+  padding-bottom: 20px;
 }
 
 .illustration {
@@ -37,19 +43,33 @@ p {
   border-radius: 5px 5px 0 0;
 }
 
-h1 {
+.container h1 {
   color: $color-neutral-800;
+}
+
+.desc {
+  padding: 0 20px;
 }
 
 .plan {
   margin: 20px auto;
   padding: 10px;
-  background-color: $color-primary-50;
+  background-color: $color-neutral-50;
   width: 90%;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.plan__detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan__detail img {
+  margin-right: 20px;
 }
 
 .btn {
@@ -71,6 +91,7 @@ h1 {
   color: #fff;
   background-color: $color-primary-500;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-change,
@@ -86,6 +107,12 @@ h1 {
 
 .btn-cancel:hover {
   color: $color-neutral-800;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .attribution {

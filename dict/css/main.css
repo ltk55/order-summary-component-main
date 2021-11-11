@@ -347,6 +347,20 @@ body {
   background-color: #e0e8ff;
   font-size: 1rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
 }
 
 p {
@@ -371,6 +385,7 @@ p {
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 3px #3e52a3;
           box-shadow: 3px 3px 3px #3e52a3;
+  padding-bottom: 20px;
 }
 
 .illustration {
@@ -378,14 +393,18 @@ p {
   border-radius: 5px 5px 0 0;
 }
 
-h1 {
+.container h1 {
   color: #1f2f56;
+}
+
+.desc {
+  padding: 0 20px;
 }
 
 .plan {
   margin: 20px auto;
   padding: 10px;
-  background-color: #e0e8ff;
+  background-color: #f5f7ff;
   width: 90%;
   border-radius: 5px;
   display: -webkit-box;
@@ -397,6 +416,22 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.plan__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan__detail img {
+  margin-right: 20px;
 }
 
 .btn {
@@ -419,6 +454,7 @@ h1 {
   color: #fff;
   background-color: #3829e0;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-change,
@@ -436,6 +472,17 @@ h1 {
   color: #1f2f56;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -449,6 +496,9 @@ h1 {
   .background__image {
     background: url(../images/pattern-background-desktop.svg) no-repeat center/cover;
     position: absolute;
+  }
+  .container {
+    width: 500px;
   }
 }
 /*# sourceMappingURL=main.css.map */
