@@ -15,28 +15,36 @@
     <link rel="stylesheet" href="dict/css/main.css" />
 
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
+    <div class="background__image"></div>
     <div class="container">
+      <img
+        class="illustration"
+        src="dict/images/illustration-hero.svg"
+        alt="illustration"
+      />
+
       <h1 class="title">Order Summary</h1>
 
       <p>
         You can now listen to millions of songs, audiobooks, and podcasts on any
         device anywhere you like!
       </p>
-      <div class="plan">Annual Plan $59.99/year Change</div>
-      <div class="button">Proceed to Payment Cancel Order</div>
+
+      <div class="plan">
+        <img src="dict/images/icon-music.svg" alt="music-icon" />
+        <div class="">
+          <h4>Annual Plan</h4>
+          <p>$59.99/year</p>
+        </div>
+        <button class="btn btn-change">Change</button>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-proceed">Proceed to Payment</button>
+        <button class="btn btn-cancel">Cancel Order</button>
+      </div>
     </div>
 
     <div class="attribution">

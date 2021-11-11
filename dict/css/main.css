@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -343,12 +343,112 @@ template {
 }
 
 body {
-  background: url(../images/pattern-background-mobile.svg);
-  background-repeat: no-repeat;
-  background-color: #f5f7ff;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+  color: #7280a7;
+}
+
+.background__image {
+  background: url(../images/pattern-background-mobile.svg) no-repeat center/cover;
+  position: absolute;
+  height: 50vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .container {
-  font-family: "Red Hat Display";
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px #3e52a3;
+          box-shadow: 3px 3px 3px #3e52a3;
+}
+
+.illustration {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+h1 {
+  color: #1f2f56;
+}
+
+.plan {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #e0e8ff;
+  width: 90%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-change {
+  background-color: transparent;
+  color: #3829e0;
+  text-decoration: underline;
+}
+
+.btn-proceed {
+  color: #fff;
+  background-color: #3829e0;
+  padding: 10px;
+}
+
+.btn-change,
+.btn-proceed:hover {
+  opacity: 0.8;
+}
+
+.btn-cancel {
+  color: #7280a7;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.btn-cancel:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 1440px) {
+  .background__image {
+    background: url(../images/pattern-background-desktop.svg) no-repeat center/cover;
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=main.css.map */
